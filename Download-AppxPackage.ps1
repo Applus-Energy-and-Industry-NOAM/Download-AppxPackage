@@ -1,3 +1,13 @@
+<#
+.SYNOPSIS
+Basic Syntax:
+.\Download-AppxPackage.ps1 -Uri <URL to Windows Store Application> -Path <Path to store downloaded files>
+
+.EXAMPLE
+.\Download-AppxPackage.ps1 -Uri https://www.microsoft.com/en-us/p/microsoft-to-do-lists-tasks-reminders/9nblggh5r558 -Path C:\Temp\MSTodo
+
+#>
+
 [CmdletBinding()]
 param (
   [string]$Uri,
